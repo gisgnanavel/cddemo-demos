@@ -24,3 +24,6 @@ demonstrate use of a DSL to define the CD process as a set of simpler steps (act
 - everything is set in SCM. As images IDs or `Dockerfile`s
 
 
+## Note
+if you use docker on OSX/Windows relying on boot2docker, the docker job will fail (shell script step hang). This is due to workspace mount, which reference /var/jenkins_home from the docker container hosting jenkins, which itself is a bind mount from your local directory. But subsequent attempt to bind mount /var/jenkins_home do run from dockerhost, and as such is missing this folder. As a workaround, ssh the docker machine and run: `sudo ln -s /Users/xxx/path-to-demo-directory/jenkins-home/ /var/jenkins_home`.
+I'm looking for a fix in docker-workflow-plugin using `--volumes-from` ...
