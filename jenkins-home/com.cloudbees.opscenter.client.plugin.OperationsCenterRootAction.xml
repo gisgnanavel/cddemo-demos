@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.opscenter.client.plugin.OperationsCenterRootAction_-DescriptorImpl plugin="operations-center-client@1.7.1">
+  <state>UNCONFIGURED</state>
+  <configurable>true</configurable>
+  <registered>false</registered>
+</com.cloudbees.opscenter.client.plugin.OperationsCenterRootAction_-DescriptorImpl>

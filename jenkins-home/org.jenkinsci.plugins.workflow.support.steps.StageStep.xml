@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tree-map>
+  <entry>
+    <string>professional/continuous-delivery</string>
+    <tree-map>
+      <entry>
+        <string>QA</string>
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="workflow-support@1.10">
+          <holding class="sorted-set">
+            <int>3</int>
+          </holding>
+        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
+      </entry>
+    </tree-map>
+  </entry>
+</tree-map>

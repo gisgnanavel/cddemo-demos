@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1.10">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@1.10">
+    <script>stage &apos;Dev&apos;
+node {
+    git &apos;https://github.com/ndeloof/cddemo&apos;
+    mvn &quot;clean package&quot;
+    dir(&apos;target&apos;) {stash name: &apos;war&apos;, includes: &apos;x.war&apos;}
+}
+
+stage &apos;QA&apos;
+
+node {
+    unstash &apos;war&apos;
+    sh &quot;cp x.war /var/lib/jetty/webapps/test.war&quot;
+}    
+
+parallel(
+    smokeTests: {
+        node {
+            git &apos;https://github.com/ndeloof/cddemo&apos;
+            mvn &quot;test -f sometests -P smoke -Durl=http://webserver:8080/test&quot;
+        }
+    }, 
+    acceptanceTests: {
+        node {
+            git &apos;https://github.com/ndeloof/cddemo&apos;
+            mvn &quot;test -f sometests -P acceptance -Durl=http://webserver:8080/test&quot;
+        }
+    }
+)
+
+stage name: &apos;Staging&apos;, concurrency: 1
+
+node {
+    unstash &apos;war&apos;
+    sh &quot;cp x.war /var/lib/jetty/webapps/staging.war&quot;
+}    
+
+input message: &quot;Does http://webserver:8080/staging/ look good?&quot;
+
+checkpoint(&apos;Before production&apos;)
+
+stage name: &apos;Production&apos;, concurrency: 1
+node {
+    unstash &apos;war&apos;
+    sh &quot;cp x.war /var/lib/jetty/webapps/production.war&quot;
+}    
+
+
+// my custom utility methods
+
+def mvn(args) {
+    sh &quot;${tool &apos;maven (latest)&apos;}/bin/mvn ${args}&quot;
+}
+
+</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+</flow-definition>

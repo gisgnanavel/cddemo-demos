@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nectar.plugins.rbac.strategy.RoleMatrixAuthorizationPlugin plugin="nectar-rbac@4.16"/>

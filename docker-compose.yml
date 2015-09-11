@@ -1,0 +1,31 @@
+# Jenkins master, running on default http 80 port
+jenkins:
+  image: cloudbees/jenkins-enterprise
+  ports:
+    - "80:8080"
+    - "50000:50000"
+  volumes:
+    # JENKINS_HOME, from host with pre-defined demo jobs
+    - ./jenkins-home:/var/jenkins_home
+    # Required host stuff so jenkins can run `docker` command to start containers
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /usr/local/bin/docker:/usr/local/bin/docker
+  volumes_from:
+    # We "deploy" to jetty with a plain `cp`
+    - webserver    
+  links:
+    - webserver
+    - docker-registry
+
+# Jetty web server to run tests, staging and production
+webserver:
+  image: jetty:9
+  ports:
+    - "8080:8080"
+  volumes:
+    - ./webapps:/var/lib/jetty/webapps
+
+# Our private docker registry
+docker-registry:
+  image: registry
+

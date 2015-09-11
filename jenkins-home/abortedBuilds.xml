@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.6">
+  <id>abortedBuilds</id>
+  <builds class="linked-hash-set">
+    <string>professional/continuous-delivery#3</string>
+  </builds>
+  <lastSaved/>
+</com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor>

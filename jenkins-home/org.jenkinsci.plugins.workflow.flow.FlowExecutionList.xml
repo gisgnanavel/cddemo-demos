@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<list>
+  <flow-owner plugin="workflow-job@1.10">
+    <job>professional/continuous-delivery</job>
+    <id>3</id>
+  </flow-owner>
+</list>
