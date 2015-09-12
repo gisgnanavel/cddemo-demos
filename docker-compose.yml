@@ -29,4 +29,6 @@ webserver:
 # Our private docker registry
 docker-registry:
   image: registry
+  ports:
+    - "5000:5000"
 
