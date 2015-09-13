@@ -29,7 +29,7 @@ node {
 
    checkpoint &apos;before-push&apos;
 
-   docker.withRegistry(&apos;http://127.0.0.1&apos;, &apos;docker-registry&apos;) {
+   docker.withRegistry(&apos;http://localhost:5000&apos;, &apos;docker-registry&apos;) {
       image.push(&quot;latest&quot;)
    } 
    
