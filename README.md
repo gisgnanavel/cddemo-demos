@@ -19,7 +19,7 @@ demonstrate use of a DSL to define the CD process as a set of simpler steps (act
 - easy to share and review
 - Jenkinsfile !
 
-## step 3 : "future" introduce docker workflow
+## step 4 : "future" introduce docker workflow
 - stop relying on jenkins to define the build environment
 - everything is set in SCM. As images IDs or `Dockerfile`s
 
