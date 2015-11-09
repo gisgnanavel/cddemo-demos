@@ -10,6 +10,7 @@ jenkins:
     # Required host stuff so jenkins can run `docker` command to start containers
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/local/bin/docker:/usr/local/bin/docker
+    - /tmp:/tmp
   volumes_from:
     # We "deploy" to jetty with a plain `cp`
     - webserver    
