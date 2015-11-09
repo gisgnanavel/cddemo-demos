@@ -2,7 +2,22 @@
 <com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.6">
   <id>abortedBuilds</id>
   <builds class="linked-hash-set">
-    <string>professional/continuous-delivery#3</string>
+    <string>technologist/continuous-delivery#7</string>
+    <string>future/Jenkinsfile#5</string>
+    <string>future/multibranch/master#4</string>
   </builds>
-  <lastSaved/>
+  <lastSaved>
+    <entry>
+      <string>future/Jenkinsfile#5</string>
+      <long>1447080596665</long>
+    </entry>
+    <entry>
+      <string>technologist/continuous-delivery#7</string>
+      <long>1447080589109</long>
+    </entry>
+    <entry>
+      <string>future/multibranch/master#4</string>
+      <long>1447080600098</long>
+    </entry>
+  </lastSaved>
 </com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor>

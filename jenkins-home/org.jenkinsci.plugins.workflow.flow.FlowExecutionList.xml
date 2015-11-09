@@ -1,7 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <list>
-  <flow-owner plugin="workflow-job@1.10">
-    <job>professional/continuous-delivery</job>
-    <id>3</id>
+  <flow-owner plugin="workflow-job@1.11-beta-3">
+    <job>technologist/continuous-delivery</job>
+    <id>7</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@1.11-beta-3">
+    <job>future/Jenkinsfile</job>
+    <id>5</id>
+  </flow-owner>
+  <flow-owner plugin="workflow-job@1.11-beta-3">
+    <job>future/multibranch/master</job>
+    <id>4</id>
   </flow-owner>
 </list>

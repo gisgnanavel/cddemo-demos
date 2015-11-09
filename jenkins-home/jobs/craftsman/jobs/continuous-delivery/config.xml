@@ -3,13 +3,7 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <hudson.plugins.promoted__builds.JobPropertyImpl plugin="promoted-builds@2.22">
-      <activeProcessNames>
-        <string>production</string>
-      </activeProcessNames>
-    </hudson.plugins.promoted__builds.JobPropertyImpl>
-  </properties>
+  <properties/>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -32,6 +26,7 @@ parallel ([
 ])
 
 build(&quot;deploy&quot;, target: &quot;staging&quot;, build: b)
-</dsl>
+
+// TODO push to production</dsl>
   <buildNeedsWorkspace>true</buildNeedsWorkspace>
 </com.cloudbees.plugins.flow.BuildFlow>

@@ -16,8 +16,10 @@ jenkins-home/plugins/*/
 jenkins-home/optional-plugins/*/
 jenkins-home/queue.xml
 jenkins-home/operations-center-cloud.db.*
+jenkins-home/license.xml
 
 **/builds/
+**/branches/
 **/last*
 **/nextBuildNumber
 **/workspace/

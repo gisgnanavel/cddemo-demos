@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <sites>
-  <jenkins-enterprise plugin="nectar-license@7.1">
+  <jenkins-enterprise plugin="nectar-license@7.2">
+    <id>jenkins-experimental</id>
+    <url>http://jenkins-updates.cloudbees.com/update-center/experimental/update-center.json</url>
+  </jenkins-enterprise>
+  <jenkins-enterprise plugin="nectar-license@7.2">
     <id>jenkins-enterprise</id>
     <url>http://jenkins-updates.cloudbees.com/update-center.json</url>
   </jenkins-enterprise>

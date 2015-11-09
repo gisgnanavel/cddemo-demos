@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.dockerslaves.DockerSlaves plugin="docker-slaves@1.0-beta-4-SNAPSHOT">
+  <defaultBuildContainerImageName>ubuntu:latest</defaultBuildContainerImageName>
+  <scmContainerImageName>buildpack-deps:scm</scmContainerImageName>
+  <remotingContainerImageName>jenkinsci/slave</remotingContainerImageName>
+  <dockerHost plugin="docker-commons@1.2"/>
+</com.cloudbees.jenkins.plugins.dockerslaves.DockerSlaves>

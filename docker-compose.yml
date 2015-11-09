@@ -15,7 +15,6 @@ jenkins:
     - webserver    
   links:
     - webserver
-    - docker-registry
   user: jenkins:100 # 'docker' group, required to access docker.sock  
 
 # Jetty web server to run tests, staging and production
@@ -26,9 +25,4 @@ webserver:
   volumes:
     - ./webapps:/var/lib/jetty/webapps
 
-# Our private docker registry
-docker-registry:
-  image: registry
-  ports:
-    - "5000:5000"
 
