@@ -7,7 +7,8 @@
     <com.cloudbees.jenkins.plugins.dockerslaves.JobBuildsContainersDefinition plugin="docker-slaves@1.0-beta-4-SNAPSHOT">
       <buildHostImage class="com.cloudbees.jenkins.plugins.dockerslaves.DockerfileContainerDefinition">
         <dockerfile>Dockerfile</dockerfile>
-        <contextPath>php-webdriver</contextPath>
+        <contextPath></contextPath>
+        <forcePull>false</forcePull>
       </buildHostImage>
       <sideContainers>
         <com.cloudbees.jenkins.plugins.dockerslaves.SideContainerDefinition>
@@ -19,16 +20,12 @@
         </com.cloudbees.jenkins.plugins.dockerslaves.SideContainerDefinition>
       </sideContainers>
     </com.cloudbees.jenkins.plugins.dockerslaves.JobBuildsContainersDefinition>
-    <jenkins.branch.RateLimitBranchProperty_-JobPropertyImpl plugin="branch-api@0.2-beta-5">
-      <durationName>hour</durationName>
-      <count>0</count>
-    </jenkins.branch.RateLimitBranchProperty_-JobPropertyImpl>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.4.0">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.5.0-beta2">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/ydubreuil/docker-slaves-plugin-demos</url>
+        <url>https://github.com/ndeloof/php-webdriver-demo.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -48,7 +45,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>composer </command>
+      <command>composer install
+vendor/bin/phpunit</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
