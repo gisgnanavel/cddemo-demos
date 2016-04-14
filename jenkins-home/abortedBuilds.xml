@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.6">
+<com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.7">
   <id>abortedBuilds</id>
-  <builds class="linked-hash-set">
-    <string>technologist/continuous-delivery#7</string>
-    <string>future/Jenkinsfile#5</string>
-    <string>future/multibranch/master#4</string>
-  </builds>
+  <builds class="linked-hash-set"/>
   <lastSaved>
     <entry>
       <string>future/Jenkinsfile#5</string>

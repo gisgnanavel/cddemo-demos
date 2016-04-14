@@ -23,7 +23,7 @@
   <hudson.node__monitors.ResponseTimeMonitor>
     <ignored>false</ignored>
   </hudson.node__monitors.ResponseTimeMonitor>
-  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.11">
+  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.14">
     <ignored>false</ignored>
   </com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl>
 </hudson.util.DescribableList>

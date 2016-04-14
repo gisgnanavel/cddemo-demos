@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<hudson.license.LicenseManager plugin="cloudbees-license@7.6">
+<hudson.license.LicenseManager plugin="cloudbees-license@7.11">
   <key>-----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEA403jC+KzIJ2BaMv8KzCGn5aX/I3W9AC0JtCdqimtahwgFOxW
 ViLMcngq0R9x0pOppPf/Ae+6wHKkVcAwuWBeHFM7QN6VFUefToHXrLsk0gKKfNZm
@@ -65,6 +65,5 @@ usxycDhzfhOjL8GPpyJiCe3mcJ0KsP2p6kQ8c7dUa+rZsamyIKcmAoyt5blg0S1N
 k4hGxZktD0VhRH52E/iYhSLL2Y0wQB8/9GquRu0anvTqyCLz5FLQHdxkcTk=
 -----END CERTIFICATE-----
 </certificate>
-  <certificateDigest>a19a3f6f74a365bf7f1b947423a9c7b9</certificateDigest>
-  <expires>1444550022000</expires>
+  <certificateDigest>d6942c59a24a9f947af604b798949c43</certificateDigest>
 </hudson.license.LicenseManager>

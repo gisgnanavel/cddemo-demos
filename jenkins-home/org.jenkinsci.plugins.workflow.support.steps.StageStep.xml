@@ -5,7 +5,7 @@
     <tree-map>
       <entry>
         <string>Staging</string>
-        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="workflow-support@1.11-beta-3">
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.0">
           <holding class="sorted-set">
             <int>5</int>
           </holding>
@@ -19,23 +19,9 @@
     <tree-map>
       <entry>
         <string>Staging</string>
-        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="workflow-support@1.11-beta-3">
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.0">
           <holding class="sorted-set">
             <int>4</int>
-          </holding>
-          <concurrency>1</concurrency>
-        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
-      </entry>
-    </tree-map>
-  </entry>
-  <entry>
-    <string>technologist/continuous-delivery</string>
-    <tree-map>
-      <entry>
-        <string>Staging</string>
-        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="workflow-support@1.11-beta-3">
-          <holding class="sorted-set">
-            <int>7</int>
           </holding>
           <concurrency>1</concurrency>
         </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
