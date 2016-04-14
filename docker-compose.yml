@@ -9,14 +9,14 @@ jenkins:
     - ./jenkins-home:/var/jenkins_home
     # Required host stuff so jenkins can run `docker` command to start containers
     - /var/run/docker.sock:/var/run/docker.sock
-    - /usr/local/bin/docker:/usr/local/bin/docker
+    - /usr/bin/docker:/usr/bin/docker
     - /tmp:/tmp
   volumes_from:
     # We "deploy" to jetty with a plain `cp`
     - webserver    
   links:
     - webserver
-  user: jenkins:100 # 'docker' group, required to access docker.sock  
+  user: jenkins:staff # 'staff' group, required to access docker.sock  
 
 # Jetty web server to run tests, staging and production
 webserver:

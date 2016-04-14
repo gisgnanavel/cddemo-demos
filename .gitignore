@@ -24,7 +24,10 @@ jenkins-home/license.xml
 **/nextBuildNumber
 **/workspace/
 **/workspace@*/
+**/indexing.xml
 *.bak
 *.log
+*.txt
+*.log.*
 webapps/
 jenkins-home/secrets/jenkins.model.Jenkins.crumbSalt
