@@ -27,3 +27,4 @@ jenkins-home/license.xml
 *.bak
 *.log
 webapps/
+jenkins-home/secrets/jenkins.model.Jenkins.crumbSalt
