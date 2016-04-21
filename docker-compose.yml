@@ -1,6 +1,6 @@
 # Jenkins master, running on default http 80 port
 jenkins:
-  image: cloudbees/jenkins-enterprise
+  image: jenkinsci/jenkins:2.0
   ports:
     - "8000:8080"
     - "50000:50000"
