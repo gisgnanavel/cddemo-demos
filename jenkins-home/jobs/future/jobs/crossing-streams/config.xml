@@ -1,15 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1.11-beta-1">
+<flow-definition plugin="workflow-job@2.1">
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <jenkins.branch.RateLimitBranchProperty_-JobPropertyImpl plugin="branch-api@0.2-beta-5">
-      <durationName>hour</durationName>
-      <count>0</count>
-    </jenkins.branch.RateLimitBranchProperty_-JobPropertyImpl>
-  </properties>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@1.11-beta-1">
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.1">
     <script>def maven = docker.image(&quot;maven:3.3.3-jdk-8&quot;)
 
 node {

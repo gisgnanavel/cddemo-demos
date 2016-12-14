@@ -1,13 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tree-map>
   <entry>
-    <string>future/Jenkinsfile</string>
+    <string>future/multibranch/ContainerDay16</string>
     <tree-map>
       <entry>
         <string>Staging</string>
-        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.0">
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.2">
           <holding class="sorted-set">
-            <int>5</int>
+            <int>1</int>
+          </holding>
+          <concurrency>1</concurrency>
+        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
+      </entry>
+    </tree-map>
+  </entry>
+  <entry>
+    <string>future/multibranch/Devoxx</string>
+    <tree-map>
+      <entry>
+        <string>Staging</string>
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.2">
+          <holding class="sorted-set">
+            <int>1</int>
+          </holding>
+          <concurrency>1</concurrency>
+        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
+      </entry>
+    </tree-map>
+  </entry>
+  <entry>
+    <string>future/multibranch/FooBar</string>
+    <tree-map>
+      <entry>
+        <string>Staging</string>
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.2">
+          <holding class="sorted-set">
+            <int>1</int>
+          </holding>
+          <concurrency>1</concurrency>
+        </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
+      </entry>
+    </tree-map>
+  </entry>
+  <entry>
+    <string>future/multibranch/OuestFrance</string>
+    <tree-map>
+      <entry>
+        <string>Staging</string>
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.2">
+          <holding class="sorted-set">
+            <int>1</int>
           </holding>
           <concurrency>1</concurrency>
         </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>
@@ -19,9 +61,9 @@
     <tree-map>
       <entry>
         <string>Staging</string>
-        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.0">
+        <org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage plugin="pipeline-stage-step@2.2">
           <holding class="sorted-set">
-            <int>4</int>
+            <int>2</int>
           </holding>
           <concurrency>1</concurrency>
         </org.jenkinsci.plugins.workflow.support.steps.StageStepExecution_-Stage>

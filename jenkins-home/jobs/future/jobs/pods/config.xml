@@ -12,6 +12,13 @@
       </buildHostImage>
       <sideContainers>
         <com.cloudbees.jenkins.plugins.dockerslaves.SideContainerDefinition>
+          <name>db</name>
+          <spec class="com.cloudbees.jenkins.plugins.dockerslaves.ImageIdContainerDefinition">
+            <image>mysql</image>
+            <forcePull>false</forcePull>
+          </spec>
+        </com.cloudbees.jenkins.plugins.dockerslaves.SideContainerDefinition>
+        <com.cloudbees.jenkins.plugins.dockerslaves.SideContainerDefinition>
           <name>selenium</name>
           <spec class="com.cloudbees.jenkins.plugins.dockerslaves.ImageIdContainerDefinition">
             <image>selenium/standalone-firefox</image>

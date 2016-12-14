@@ -1,21 +1,18 @@
 # Jenkins master, running on default http 80 port
 jenkins:
-  image: jenkinsci/jenkins:2.0
+  image: jenkins
   ports:
     - "8000:8080"
     - "50000:50000"
+  environment:
+    - JENKINS_HOME=/Users/nicolas/dockerfiles/cddemo-demos/jenkins-home
   volumes:
     # JENKINS_HOME, from host with pre-defined demo jobs
-    - ./jenkins-home:/var/jenkins_home
+    - ./jenkins-home:/Users/nicolas/dockerfiles/cddemo-demos/jenkins-home
     # Required host stuff so jenkins can run `docker` command to start containers
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/bin/docker:/usr/bin/docker
     - /tmp:/tmp
-  volumes_from:
-    # We "deploy" to jetty with a plain `cp`
-    - webserver    
-  links:
-    - webserver
   user: jenkins:staff # 'staff' group, required to access docker.sock  
 
 # Jetty web server to run tests, staging and production

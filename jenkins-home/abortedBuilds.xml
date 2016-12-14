@@ -1,11 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.7">
+<com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.9">
   <id>abortedBuilds</id>
-  <builds class="linked-hash-set"/>
+  <builds class="linked-hash-set">
+    <string>future/docker#5</string>
+  </builds>
   <lastSaved>
+    <entry>
+      <string>craftsman/continuous-delivery#1</string>
+      <long>1460653833357</long>
+    </entry>
     <entry>
       <string>future/Jenkinsfile#5</string>
       <long>1447080596665</long>
+    </entry>
+    <entry>
+      <string>tinkerer/1_build#1</string>
+      <long>1460653826618</long>
     </entry>
     <entry>
       <string>technologist/continuous-delivery#7</string>
@@ -14,6 +24,22 @@
     <entry>
       <string>future/multibranch/master#4</string>
       <long>1447080600098</long>
+    </entry>
+    <entry>
+      <string>future/multibranch/OuestFrance#1</string>
+      <long>1467024140581</long>
+    </entry>
+    <entry>
+      <string>future/multibranch/master#2</string>
+      <long>1461241592722</long>
+    </entry>
+    <entry>
+      <string>future/multibranch/Devoxx#1</string>
+      <long>1461245274944</long>
+    </entry>
+    <entry>
+      <string>future/multibranch/ContainerDay16#1</string>
+      <long>1467196370981</long>
     </entry>
   </lastSaved>
 </com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor>
