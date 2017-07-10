@@ -1,9 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.cloudbees.jenkins.plugins.abortedbuilds.AbortedBuildMonitor plugin="cloudbees-aborted-builds@1.9">
   <id>abortedBuilds</id>
-  <builds class="linked-hash-set">
-    <string>future/docker#5</string>
-  </builds>
+  <builds class="linked-hash-set"/>
   <lastSaved>
     <entry>
       <string>craftsman/continuous-delivery#1</string>
@@ -12,10 +10,6 @@
     <entry>
       <string>future/Jenkinsfile#5</string>
       <long>1447080596665</long>
-    </entry>
-    <entry>
-      <string>tinkerer/1_build#1</string>
-      <long>1460653826618</long>
     </entry>
     <entry>
       <string>technologist/continuous-delivery#7</string>

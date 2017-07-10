@@ -5,10 +5,10 @@ jenkins:
     - "8000:8080"
     - "50000:50000"
   environment:
-    - JENKINS_HOME=/Users/nicolas/dockerfiles/cddemo-demos/jenkins-home
+    - JENKINS_HOME=/Users/nicolas/java/src/github.com/ndeloof/cddemo-demos/jenkins-home
   volumes:
     # JENKINS_HOME, from host with pre-defined demo jobs
-    - ./jenkins-home:/Users/nicolas/dockerfiles/cddemo-demos/jenkins-home
+    - ./jenkins-home:/Users/nicolas/java/src/github.com/ndeloof/cddemo-demos/jenkins-home
     # Required host stuff so jenkins can run `docker` command to start containers
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/bin/docker:/usr/bin/docker

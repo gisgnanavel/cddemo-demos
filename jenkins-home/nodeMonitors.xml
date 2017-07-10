@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.util.DescribableList>
-  <com.cloudbees.jenkins.plugins.foldersplus.SecurityTokensNodeProperty_-NodeMonitorImpl plugin="cloudbees-folders-plus@3.0">
+  <com.cloudbees.jenkins.plugins.foldersplus.SecurityTokensNodeProperty_-NodeMonitorImpl plugin="cloudbees-folders-plus@3.1">
     <ignored>false</ignored>
   </com.cloudbees.jenkins.plugins.foldersplus.SecurityTokensNodeProperty_-NodeMonitorImpl>
   <hudson.node__monitors.ArchitectureMonitor>
@@ -23,7 +23,7 @@
   <hudson.node__monitors.ResponseTimeMonitor>
     <ignored>false</ignored>
   </hudson.node__monitors.ResponseTimeMonitor>
-  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.14">
+  <com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl plugin="cloudbees-nodes-plus@1.15">
     <ignored>false</ignored>
   </com.cloudbees.jenkins.plugins.nodesplus.OwnerNodeProperty_-NodeMonitorImpl>
 </hudson.util.DescribableList>
